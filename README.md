@@ -17,7 +17,8 @@ gunzip -c downloaded_file.gz > iplogs.csv
 Filter out only IPv4 addresses into __ipv4log.csv__:
 
 ```bash
-head -n `grep '224.0.0.0' ipv4log.csv -n | cut -d':' -f1` iplogs.csv > ipv4logs.csv
+touch ipv4logs.csv
+head -n `grep '224.0.0.0' iplogs.csv -n | cut -d':' -f1` iplogs.csv > ipv4logs.csv
 ```
 
 Then run

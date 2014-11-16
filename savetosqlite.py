@@ -4,7 +4,7 @@ import sqlite3
 
 if __name__ == '__main__':
 
-    conn = sqlite3.connect('iplocs.db')
+    conn = sqlite3.connect('iplocs_city.db')
     r = conn.cursor()
 
     with open('ipv4log_city.csv', 'r') as csvlog:

@@ -6,9 +6,9 @@ Store CSV from [dp-ip.com](https://db-ip.com/db/) to MySQL or SQLite for fast IP
 
 ## To make an SQLite db:
 
-This is based on the simplest IP -> Country database.
+This is based on the IP -> city database.
 
-Download [country-db](https://db-ip.com/db/download/country):
+Download [city-db](https://db-ip.com/db/download/city):
 
 ```bash
 gunzip -c downloaded_file.gz > iplogs.csv
@@ -31,4 +31,3 @@ $ python iplookup.py '123.45.67.89'
 
 ----
 
-You will need to manually create the database and table for the MySQL version found under **_mysql/**
